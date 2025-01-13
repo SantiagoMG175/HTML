@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Página HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+        <p>Esta es una página de ejemplo creada con HTML.</p>
+    </header>
+
+    <section>
+        <h2>Características de esta página</h2>
+        <ul>
+            <li>Es sencilla y funcional.</li>
+            <li>Incluye un formulario para contacto.</li>
+            <li>Es visualmente agradable.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contáctanos</h2>
+        <form action="/enviar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
